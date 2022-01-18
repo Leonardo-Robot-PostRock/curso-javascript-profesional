@@ -1,0 +1,25 @@
+{
+  "name": "platzi-media-player",
+  "version": "1.0.0",
+  "description": "Proyecto del Curso Profesional de Javascript de la escuela de JavaSript de Platzi",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leonardo-Robot-PostRock/curso-javascript-profesional.git"
+  },
+  "keywords": [
+    "platzi"
+  ],
+  "author": "Leonardo Gabriel Puebla <leonardo38361@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Leonardo-Robot-PostRock/curso-javascript-profesional/issues"
+  },
+  "homepage": "https://github.com/Leonardo-Robot-PostRock/curso-javascript-profesional#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
