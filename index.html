@@ -15,12 +15,33 @@
 
     <main class="container">
         <video class="movie">
-            <source src="./assets/BigBuckBunny.mp4"> 
+            <source src="./assets/BigBuckBunny.mp4">
         </video>
         <button>Play/Pause</button>
     </main>
     <script>
-        const video
+        const video = document.querySelector("video");
+        const button = document.querySelector("button");
+
+        //constructor
+        function MediaPlayer(media) {
+            this.mediaP = media.element
+        }
+
+        MediaPlayer.prototype.changeState = function () {
+            if (this.mediaP.paused) {
+                //palabra reservada play()
+                this.mediaP.play();
+            } else {
+                //palabra reservada pause()
+                this.mediaP.pause();
+            }
+        }
+
+        //instancias
+        const player = new MediaPlayer({ element: video })
+
+        button.onclick = () => player.changeState()
     </script>
 </body>
 
